@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="slick-1.8.1/slick/slick-theme.css"
+    />
+
+    <title>Cabot Cruises</title>
+  </head>
+  <body>
+    <header>
+      <h1>hello world</h1>
+      <h2>Vacation with us</h2>
+      <!-- TODO Create Logo -->
+    </header>
+    <!-- TODO Create NAV -->
+
+    <main>
+      <div class="slider">
+        <picture>
+          <source
+            media="(max-width:1200px)"
+            srcset="./images/tropical_beach_slider_medium-large.jpg"
+          />
+          <source
+            media="(max-width: 350px)"
+            srcset="./images/tropical_beach_slider_small.jpg"
+          />
+        </picture>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".Slider").slick({
+          dots: true,
+          arrows: false,
+          infinite: true,
+          speed: 1000,
+          cssEase: "ease-in",
+          autoplay: true,
+          autoplaySpeed: 30000,
+        });
+      });
+    </script>
+  </body>
+</html>
