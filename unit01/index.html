@@ -16,22 +16,56 @@
   </head>
   <body>
     <header>
-      <h1>hello world</h1>
-      <h2>Vacation with us</h2>
+ <div id="logo">
+    <img src="./images/CC_logo.png"
+    alt="Business Logo"
+    <!-- TODO Add srcset for logo here.-->>
+ </div>
+ 
       <!-- TODO Create Logo -->
     </header>
     <!-- TODO Create NAV -->
 
     <main>
-      <div class="slider">
+      <div class="Slider">
         <picture>
           <source
-            media="(max-width:1200px)"
-            srcset="./images/tropical_beach_slider_medium-large.jpg"
+            media="(max-width: 350px)"
+            srcset="images/tropical_beach_slider_small.jpg"
           />
+          <img
+            src="images/tropical_beach_slider_medium-large.jpg"
+            alt="image"
+          />
+        </picture>
+        <picture>
           <source
             media="(max-width: 350px)"
-            srcset="./images/tropical_beach_slider_small.jpg"
+            srcset="images/tropical_dining_slider_small.jpg"
+          />
+          <img
+            src="images/tropical_dining_slider_medium-large.jpg"
+            alt="image"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 350px)"
+            srcset="images/tropical_excursion_slider_small.jpg"
+          />
+          <img
+            src="images/tropical_excursion_slider_medium-large.jpg"
+            alt="image"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 350px)"
+            srcset="images/tropical_sleep_slider_small.jpg"
+          />
+          <img
+            src="images/tropical_sleep_slider_medium-large.jpg"
+            alt="image"
           />
         </picture>
       </div>
@@ -42,6 +76,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js" type="module"></script>
 
     <script type="text/javascript">
       $(document).ready(function () {
@@ -58,3 +93,4 @@
     </script>
   </body>
 </html>
+<!--TODO I need to watch the pixel density video and finish creating my different logos -->
