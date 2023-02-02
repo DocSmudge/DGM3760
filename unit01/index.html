@@ -16,15 +16,52 @@
   </head>
   <body>
     <header>
- <div id="logo">
-    <img src="./images/CC_logo.png"
-    alt="Business Logo"
-    <!-- TODO Add srcset for logo here.-->>
- </div>
- 
-      <!-- TODO Create Logo -->
+      <div id="logo">
+        <img
+          src="images/logo.png"
+          alt="Business Logo"
+          srcset="
+            ./images/logo1.png 1x,
+            ./images/logo2.png 2x,
+            ./images/logo3.png 3x
+          "
+        />
+        <h3>Call Now to Book!</h3>
+        <a href="tel +801-555-1234">801-555-1234</a>
+      </div>
     </header>
-    <!-- TODO Create NAV -->
+
+    <div id="navWrapper">
+      <nav>
+        <button id="hamburgerButton"><span>&#9776;</span><span>x</span></button>
+        <ul id="primaryNav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="parent">
+            <a href="#">Agents</a>
+            <ul>
+              <li><a href="#">submenu</a></li>
+              <li><a href="#">submenu2</a></li>
+            </ul>
+          </li>
+          <!-- end parent nav -->
+          <li><a href="#">Cruises</a></li>
+          <li><a href="#">Book</a></li>
+        </ul>
+      </nav>
+      <div class="searchBox">
+        <form
+          action="https://explore.org/livecams/kitten-rescue/kitten-rescue-baby-kittens/"
+          method="GET"
+          class="form"
+        >
+          <input type="search" placeholder="Search.." />
+          <button type="submit" class="searchButton">
+            <img src="./images/search.png" />
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- end navWrapperDiv-->
 
     <main>
       <div class="Slider">
@@ -69,7 +106,54 @@
           />
         </picture>
       </div>
+      <!--end slider div-->
+      <div class="articleDiv">
+        <h2>Recent Blog Articles</h2>
+        <div class="cards">
+          <div class="card1">
+            <a href="#">
+              <div>
+                <img src="./images/article1.jpg" alt="blog" />
+                <h3>Article title</h3>
+              </div>
+            </a>
+          </div>
+          <!-- end card1 div-->
+          <div class="card2">
+            <a href="#">
+              <div>
+                <img src="./images/article2.jpg" alt="blog" />
+                <h3>Article title</h3>
+              </div>
+            </a>
+          </div>
+          <!-- end card2 div-->
+          <div class="card3">
+            <a href="#">
+              <div>
+                <img src="./images/article3.jpg" alt="blog" />
+                <h3>Article title</h3>
+              </div>
+            </a>
+          </div>
+          <!-- end card3 div-->
+          <div class="card4">
+            <a href="#">
+              <div>
+                <img src="./images/article4.jpg" alt="blog" />
+                <h3>Article title</h3>
+              </div>
+            </a>
+          </div>
+          <!-- end card4 div-->
+        </div>
+        <!--end cards div-->
+      </div>
+      <!-- end article div -->
+
+      <footer>&copy; Gabrielle Edwards • Login</footer>
     </main>
+
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
@@ -93,4 +177,4 @@
     </script>
   </body>
 </html>
-<!--TODO I need to watch the pixel density video and finish creating my different logos -->
+<!--TODO I just finished setting up the article section, now I need to figure out how to put the h3 over the image, as well as add a date at the bottom of each div. 
