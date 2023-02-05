@@ -2,4 +2,16 @@
     body {
         color: red;
     }
-} // end media query
+    main {
+        div.cards {
+            div.card1,
+            div.card2,
+            div.card3,
+            div.card4 {
+                flex-basis: 21%;
+                // margin: 1rem 2%;
+            }
+        }
+    }
+}
+// end media query

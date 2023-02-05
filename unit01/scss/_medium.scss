@@ -1,10 +1,43 @@
 @media only screen and(min-width:35rem) {
     body {
         color: purple;
-        //   div.contactDiv,
-        //     div.newsDiv,
-        //     div.whyDiv {
-        //         flex-basis: 29%;
-        //         margin: 1rem 2%;
+        margin: auto;
+        header {
+            order: 1;
+        }
+        div#navWrapper {
+            order: 2;
+
+            nav {
+                button {
+                    display: none;
+                }
+                ul {
+                    display: flex;
+                }
+            }
+            main {
+                div.cards {
+                    div.card1,
+                    div.card2,
+                    div.card3,
+                    div.card4 {
+                        flex-basis: 29%;
+                        // margin: 1rem 2%;
+                    }
+                }
+
+                div.footerDiv {
+                    display: flex;
+                    flex-direction: row;
+                    div.contactDiv,
+                    div.newsDiv,
+                    div.whyDiv {
+                        flex-basis: 29%;
+                        margin: 1rem 2%;
+                    }
+                }
+            }
+        } // end media query
     }
-} // end media query
+}

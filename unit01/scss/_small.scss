@@ -99,6 +99,13 @@ body {
 
 main {
     order: 3;
+    div.articleDiv {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        h2 {
+            margin-left: 1.5rem;
+        }
+    }
     div.cards {
         display: flex;
         flex-wrap: wrap;
@@ -108,6 +115,7 @@ main {
         div.card4 {
             flex-basis: 46%;
             margin: 1rem 2%;
+
             position: relative;
 
             a {
@@ -177,6 +185,21 @@ main {
             }
         }
     }
+    div.socialDiv {
+        background-color: black;
+        display: flex;
+        padding: 1rem 0;
+
+        a {
+            flex-basis: 25%;
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+        }
+        a:hover {
+            color: orange;
+        }
+    } // end social div
     footer {
         // max-width: 71.25rem;
         text-align: center;

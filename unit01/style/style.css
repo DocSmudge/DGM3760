@@ -496,6 +496,13 @@ body div#navWrapper nav ul.open {
 main {
   order: 3;
 }
+main div.articleDiv {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+main div.articleDiv h2 {
+  margin-left: 1.5rem;
+}
 main div.cards {
   display: flex;
   flex-wrap: wrap;
@@ -584,6 +591,20 @@ main div.footerDiv div.newsDiv h2 {
 main div.footerDiv div.whyDiv h2 {
   margin-bottom: 1rem;
 }
+main div.socialDiv {
+  background-color: black;
+  display: flex;
+  padding: 1rem 0;
+}
+main div.socialDiv a {
+  flex-basis: 25%;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+main div.socialDiv a:hover {
+  color: orange;
+}
 main footer {
   text-align: center;
   background-color: gray;
@@ -599,10 +620,45 @@ main footer {
 @media only screen and (min-width: 560px) and (min-width: 35rem) {
   body {
     color: purple;
+    margin: auto;
+  }
+  body header {
+    order: 1;
+  }
+  body div#navWrapper {
+    order: 2;
+  }
+  body div#navWrapper nav button {
+    display: none;
+  }
+  body div#navWrapper nav ul {
+    display: flex;
+  }
+  body div#navWrapper main div.cards div.card1,
+body div#navWrapper main div.cards div.card2,
+body div#navWrapper main div.cards div.card3,
+body div#navWrapper main div.cards div.card4 {
+    flex-basis: 29%;
+  }
+  body div#navWrapper main div.footerDiv {
+    display: flex;
+    flex-direction: row;
+  }
+  body div#navWrapper main div.footerDiv div.contactDiv,
+body div#navWrapper main div.footerDiv div.newsDiv,
+body div#navWrapper main div.footerDiv div.whyDiv {
+    flex-basis: 29%;
+    margin: 1rem 2%;
   }
 }
 @media only screen and (min-width: 1028px) and (min-width: 65rem) {
   body {
     color: red;
+  }
+  main div.cards div.card1,
+main div.cards div.card2,
+main div.cards div.card3,
+main div.cards div.card4 {
+    flex-basis: 21%;
   }
 }/*# sourceMappingURL=style.css.map */
