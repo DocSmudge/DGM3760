@@ -506,12 +506,7 @@ main div.cards div.card3,
 main div.cards div.card4 {
   flex-basis: 46%;
   margin: 1rem 2%;
-}
-main div.cards div.card1 img,
-main div.cards div.card2 img,
-main div.cards div.card3 img,
-main div.cards div.card4 img {
-  width: 100%;
+  position: relative;
 }
 main div.cards div.card1 a,
 main div.cards div.card2 a,
@@ -530,8 +525,66 @@ main div.cards div.card4 a div {
   align-items: center;
   flex-direction: column;
 }
+main div.cards div.card1 a div img,
+main div.cards div.card2 a div img,
+main div.cards div.card3 a div img,
+main div.cards div.card4 a div img {
+  width: 100%;
+  opacity: 75%;
+}
+main div.cards div.card1 a div img:hover,
+main div.cards div.card2 a div img:hover,
+main div.cards div.card3 a div img:hover,
+main div.cards div.card4 a div img:hover {
+  opacity: 100%;
+}
+main div.cards div.card1 a div h2,
+main div.cards div.card2 a div h2,
+main div.cards div.card3 a div h2,
+main div.cards div.card4 a div h2 {
+  position: absolute;
+  bottom: 32px;
+  color: white;
+}
+main div.cards div.card1 a div h3,
+main div.cards div.card2 a div h3,
+main div.cards div.card3 a div h3,
+main div.cards div.card4 a div h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 0.3rem;
+}
+main div.footerDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(190, 188, 188);
+}
+main div.footerDiv div.contactDiv,
+main div.footerDiv div.newsDiv,
+main div.footerDiv div.whyDiv {
+  flex-basis: 29%;
+  margin: 1rem 2%;
+}
+main div.footerDiv div.contactDiv h2 {
+  margin-bottom: 1rem;
+}
+main div.footerDiv div.contactDiv h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+main div.footerDiv div.contactDiv a {
+  margin-bottom: 1rem;
+}
+main div.footerDiv div.newsDiv h2 {
+  margin-bottom: 1rem;
+}
+main div.footerDiv div.whyDiv h2 {
+  margin-bottom: 1rem;
+}
 main footer {
-  max-width: 71.25rem;
   text-align: center;
   background-color: gray;
   color: white;
@@ -540,6 +593,7 @@ main footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 @media only screen and (min-width: 560px) and (min-width: 35rem) {
