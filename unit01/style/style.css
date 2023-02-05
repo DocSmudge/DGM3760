@@ -405,14 +405,13 @@ template {
 }
 
 body {
-  color: pink;
   margin: auto;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
 }
 body header {
-  background-color: yellow;
+  background-color: #e2c5b0;
   width: 100vw;
   max-width: 1200px;
   order: 2;
@@ -428,7 +427,7 @@ body div#navWrapper {
   order: 1;
   justify-content: space-between;
   display: flex;
-  background-color: red;
+  background-color: #76bbde;
   width: 100vw;
 }
 body div#navWrapper div.searchBox form.form {
@@ -481,14 +480,16 @@ body div#navWrapper nav ul li a {
   display: block;
   padding: 1rem 2vw;
   text-decoration: none;
+  width: 100%;
 }
 body div#navWrapper nav ul li.active a {
-  background-color: #ffd4dc;
-  color: black;
+  background-color: #5361b6;
+  color: white;
 }
 body div#navWrapper nav ul li a:hover {
-  background: pink;
-  color: black;
+  background: #4957ab;
+  color: white;
+  width: 100%;
 }
 body div#navWrapper nav ul.open {
   display: block;
@@ -568,7 +569,7 @@ main div.cards div.card4 a div h3 {
 main div.footerDiv {
   display: flex;
   flex-direction: column;
-  background-color: rgb(190, 188, 188);
+  background-color: #e4c4b1;
 }
 main div.footerDiv div.contactDiv,
 main div.footerDiv div.newsDiv,
@@ -593,7 +594,7 @@ main div.footerDiv div.whyDiv h2 {
   margin-bottom: 1rem;
 }
 main div.socialDiv {
-  background-color: black;
+  background-color: #76bbde;
   display: flex;
   padding: 1rem 0;
 }
@@ -604,12 +605,12 @@ main div.socialDiv a {
   font-size: 3rem;
 }
 main div.socialDiv a:hover {
-  color: orange;
+  color: #4957ab;
 }
 main footer {
   text-align: center;
-  background-color: gray;
-  color: white;
+  background-color: #e4c4b1;
+  color: black;
   font-size: larger;
   height: 50px;
   display: flex;
@@ -620,7 +621,6 @@ main footer {
 
 @media only screen and (min-width: 560px) and (min-width: 35rem) {
   body {
-    color: purple;
     margin: auto;
   }
   body header {
@@ -647,20 +647,29 @@ main footer {
   body div#navWrapper nav ul#primaryNav li a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 0.75rem 2vw;
     font-size: 1.1rem;
+  }
+  body div#navWrapper nav ul#primaryNav li.active a {
+    background-color: #5361b6;
+    color: white;
+  }
+  body div#navWrapper nav ul#primaryNav li a:hover {
+    background: #4957ab;
+    color: white;
+    width: 100%;
   }
   body div#navWrapper nav #primaryNav li.parent > a:after {
     content: "▼";
     font-size: 0.65rem;
-    color: white;
+    color: black;
     float: left;
   }
   body div#navWrapper nav ul li ul {
     display: flex;
     flex-direction: column;
-    background-color: #333333;
+    background-color: #c8e4f2;
     border: none;
     width: 14rem;
     position: absolute;
@@ -675,29 +684,24 @@ main footer {
     left: auto;
     margin-left: 0;
   }
-}
-@media only screen and (min-width: 560px) {
-  main div.cards div.card1,
-main div.cards div.card2,
-main div.cards div.card3,
-main div.cards div.card4 {
+  body main div.cards div.card1,
+body main div.cards div.card2,
+body main div.cards div.card3,
+body main div.cards div.card4 {
     flex-basis: 29%;
   }
-  main div.footerDiv {
+  body main div.footerDiv {
     display: flex;
     flex-direction: row;
   }
-  main div.footerDiv div.contactDiv,
-main div.footerDiv div.newsDiv,
-main div.footerDiv div.whyDiv {
+  body main div.footerDiv div.contactDiv,
+body main div.footerDiv div.newsDiv,
+body main div.footerDiv div.whyDiv {
     flex-basis: 29%;
     margin: 1rem 2%;
   }
 }
 @media only screen and (min-width: 1028px) and (min-width: 65rem) {
-  body {
-    color: red;
-  }
   body main div.cards div.card1,
 body main div.cards div.card2,
 body main div.cards div.card3,

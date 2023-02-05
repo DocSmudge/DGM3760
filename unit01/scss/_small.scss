@@ -1,12 +1,11 @@
 body {
-    color: pink;
     margin: auto;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
 
     header {
-        background-color: yellow;
+        background-color: #e2c5b0;
         width: 100vw;
         max-width: 1200px;
         order: 2;
@@ -25,7 +24,7 @@ body {
         order: 1;
         justify-content: space-between;
         display: flex;
-        background-color: red;
+        background-color: #76bbde;
         width: 100vw;
 
         div.searchBox {
@@ -80,15 +79,17 @@ body {
                         display: block;
                         padding: 1rem 2vw;
                         text-decoration: none;
+                        width: 100%;
                     }
                 }
                 li.active a {
-                    background-color: lighten(pink, 4%);
-                    color: black;
+                    background-color: lighten(#4957ab, 4%);
+                    color: white;
                 }
                 li a:hover {
-                    background: pink;
-                    color: black;
+                    background: #4957ab;
+                    color: white;
+                    width: 100%;
                 }
             }
             ul.open {
@@ -155,7 +156,7 @@ main {
     div.footerDiv {
         display: flex;
         flex-direction: column;
-        background-color: rgb(190, 188, 188);
+        background-color: #e4c4b1;
 
         div.contactDiv,
         div.newsDiv,
@@ -187,7 +188,7 @@ main {
         }
     }
     div.socialDiv {
-        background-color: black;
+        background-color: #76bbde;
         display: flex;
         padding: 1rem 0;
 
@@ -198,14 +199,14 @@ main {
             font-size: 3rem;
         }
         a:hover {
-            color: orange;
+            color: #4957ab;
         }
     } // end social div
     footer {
         // max-width: 71.25rem;
         text-align: center;
-        background-color: gray;
-        color: white;
+        background-color: #e4c4b1;
+        color: black;
         font-size: larger;
         height: 50px;
         display: flex;

@@ -1,6 +1,5 @@
 @media only screen and(min-width:35rem) {
     body {
-        color: purple;
         margin: auto;
         header {
             order: 1;
@@ -26,22 +25,31 @@
                             display: block;
                             // justify-content: left;
                             text-decoration: none;
-                            color: white;
+                            color: black;
                             padding: 0.75rem 2vw;
                             font-size: 1.1rem;
                         }
+                    }
+                    li.active a {
+                        background-color: lighten(#4957ab, 4%);
+                        color: white;
+                    }
+                    li a:hover {
+                        background: #4957ab;
+                        color: white;
+                        width: 100%;
                     }
                 }
                 #primaryNav li.parent > a:after {
                     content: "\25BC";
                     font-size: 0.65rem;
-                    color: white;
+                    color: black;
                     float: left;
                 }
                 ul li ul {
                     display: flex;
                     flex-direction: column;
-                    background-color: lighten(black, 20%);
+                    background-color: lighten(#76bbde, 20%);
                     border: none;
                     width: 14rem;
                     position: absolute;
@@ -60,28 +68,28 @@
                 }
             }
         }
-    }
-}
-main {
-    div.cards {
-        div.card1,
-        div.card2,
-        div.card3,
-        div.card4 {
-            flex-basis: 29%;
-            // margin: 1rem 2%;
-        }
-    }
 
-    div.footerDiv {
-        display: flex;
-        flex-direction: row;
-        div.contactDiv,
-        div.newsDiv,
-        div.whyDiv {
-            flex-basis: 29%;
-            margin: 1rem 2%;
+        main {
+            div.cards {
+                div.card1,
+                div.card2,
+                div.card3,
+                div.card4 {
+                    flex-basis: 29%;
+                    // margin: 1rem 2%;
+                }
+            }
+
+            div.footerDiv {
+                display: flex;
+                flex-direction: row;
+                div.contactDiv,
+                div.newsDiv,
+                div.whyDiv {
+                    flex-basis: 29%;
+                    margin: 1rem 2%;
+                }
+            }
         }
     }
-}
-// end media query
+} // end media query
