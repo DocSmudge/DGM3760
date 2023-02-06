@@ -79,7 +79,6 @@ body {
                         display: block;
                         padding: 1rem 2vw;
                         text-decoration: none;
-                        width: 100%;
                     }
                 }
                 li.active a {
@@ -179,6 +178,12 @@ main {
         div.newsDiv {
             h2 {
                 margin-bottom: 1rem;
+            }
+            form {
+                padding-top: 1rem;
+                input {
+                    padding: 0.5rem;
+                }
             }
         }
         div.whyDiv {

@@ -480,7 +480,6 @@ body div#navWrapper nav ul li a {
   display: block;
   padding: 1rem 2vw;
   text-decoration: none;
-  width: 100%;
 }
 body div#navWrapper nav ul li.active a {
   background-color: #5361b6;
@@ -589,6 +588,12 @@ main div.footerDiv div.contactDiv a {
 }
 main div.footerDiv div.newsDiv h2 {
   margin-bottom: 1rem;
+}
+main div.footerDiv div.newsDiv form {
+  padding-top: 1rem;
+}
+main div.footerDiv div.newsDiv form input {
+  padding: 0.5rem;
 }
 main div.footerDiv div.whyDiv h2 {
   margin-bottom: 1rem;
