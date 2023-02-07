@@ -16,7 +16,7 @@
           margin: 0;
           padding: 0;
           list-style-type: none;
-          border-left: 1px solid rgba(255, 255, 255);
+
           li {
             border-right: 1px solid rgba(255, 255, 255);
             list-style-type: none;
@@ -70,15 +70,17 @@
     }
 
     main {
-      div.cards {
-        div.card1,
-        div.card2,
-        div.card3,
-        div.card4 {
-          flex-basis: 29%;
-          // margin: 1rem 2%;
+      div.articleDiv {
+        div.cards {
+          div.card1,
+          div.card2,
+          div.card3,
+          div.card4 {
+            flex-basis: 29%;
+            // margin: 1rem 2%;
+          }
         }
-      }
+      } //end articleDiv
 
       div.footerDiv {
         display: flex;

@@ -1,5 +1,4 @@
 body {
-  color: pink;
   // !Removed
   //   margin: auto;
   //   max-width: 1200px;
@@ -10,11 +9,11 @@ body {
   flex-direction: column;
 
   header {
-    background-color: yellow;
+    background-color: #e4c4b1;
     order: 2;
     // *Added
     width: 100%;
-    // margin: auto;
+    margin: auto;
     max-width: 1200px;
 
     div#logo {
@@ -32,14 +31,14 @@ body {
     order: 1;
     display: flex;
     // justify-content: space-between;
-    background-color: red;
+    background-color: #76bbde;
     width: 100%;
 
     // *Added
     #nav {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      // align-items: center;
 
       max-width: 1200px;
       width: 100%;
@@ -48,7 +47,7 @@ body {
 
     div.searchBox {
       form.form {
-        // background-color: white;
+        background-color: white;
         input {
           padding: 0.75rem;
           border: none;
@@ -102,12 +101,12 @@ body {
           }
         }
         li.active a {
-          background-color: lighten(pink, 4%);
-          color: black;
+          background-color: lighten(#4957ab, 4%);
+          color: white;
         }
         li a:hover {
-          background: pink;
-          color: black;
+          background: #4957ab;
+          color: white;
         }
       }
       ul.open {
@@ -123,49 +122,111 @@ main {
   width: 100%;
   margin: auto;
   max-width: 1200px;
-
-  div.cards {
-    display: flex;
-    flex-wrap: wrap;
-    div.card1,
-    div.card2,
-    div.card3,
-    div.card4 {
-      flex-basis: 46%;
-      margin: 1rem 2%;
-      img {
-        width: 100%;
-      }
-      a {
-        display: block;
-        width: 100%;
-        text-decoration: none;
-        div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-          h3 {
+  div.articleDiv {
+    h2 {
+      margin-left: 1rem;
+    }
+    div.cards {
+      display: flex;
+      flex-wrap: wrap;
+      div.card1,
+      div.card2,
+      div.card3,
+      div.card4 {
+        flex-basis: 46%;
+        margin: 1rem 2%;
+        position: relative;
+        img {
+          width: 100%;
+          opacity: 75%;
+        }
+        a {
+          display: block;
+          width: 100%;
+          text-decoration: none;
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h2 {
+              position: absolute;
+              bottom: 32px;
+              color: white;
+            }
+            h3 {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              background-color: rgba(0, 0, 0, 0.4);
+              color: white;
+              padding: 0.3rem;
+            }
           }
         }
       }
     }
   } //end articleFiguresDiv
-  footer {
-    // *Added
-    width: 100%;
-    margin: auto;
-    max-width: 1200px;
+  div.footerDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: #e4c4b1;
+    div.contactDiv {
+      flex-basis: 29%;
+      margin: 1rem 2%;
+      h2 {
+        margin-bottom: 1rem;
+      }
+      h3 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      a {
+        margin-bottom: 0.5rem;
+      }
+    } // end contactDiv
+    div.newsDiv {
+      flex-basis: 29%;
+      margin: 1rem 2%;
+      h2 {
+        margin-bottom: 1rem;
+      }
+      form {
+        padding-top: 1rem;
+        input {
+          padding: 0.5rem;
+        }
+      }
+    } // end newsDiv
+    .whyDiv {
+      flex-basis: 29%;
+      margin: 1rem 2%;
+      h2 {
+        margin-bottom: 1rem;
+      }
+    }
+  } // end footerDiv
+  div.socialDiv {
+    background-color: #76bbde;
+    display: flex;
+    padding: 1rem 0;
+    a {
+      flex-basis: 25%;
+      text-align: center;
+      color: white;
+      font-size: 3rem;
+    }
+  }
 
-    // !Removed
-    // max-width: 71.25rem;
+  footer {
     text-align: center;
-    background-color: gray;
-    color: white;
+    background-color: #e4c4b1;
+    color: black;
     font-size: larger;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
   }
-}
+} // end main
