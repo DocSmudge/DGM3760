@@ -606,9 +606,9 @@ nav button span:nth-child(1) div.cards div.card4 a div {
     margin-left: 0;
   }
   body main div.cards div.card1,
-body main div.cards div.card2,
-body main div.cards div.card3,
-body main div.cards div.card4 {
+  body main div.cards div.card2,
+  body main div.cards div.card3,
+  body main div.cards div.card4 {
     flex-basis: 29%;
   }
   body main div.footerDiv {
@@ -616,17 +616,17 @@ body main div.cards div.card4 {
     flex-direction: row;
   }
   body main div.footerDiv div.contactDiv,
-body main div.footerDiv div.newsDiv,
-body main div.footerDiv div.whyDiv {
+  body main div.footerDiv div.newsDiv,
+  body main div.footerDiv div.whyDiv {
     flex-basis: 29%;
     margin: 1rem 2%;
   }
 }
 @media only screen and (min-width: 1028px) and (min-width: 65rem) {
   body main div.cards div.card1,
-body main div.cards div.card2,
-body main div.cards div.card3,
-body main div.cards div.card4 {
+  body main div.cards div.card2,
+  body main div.cards div.card3,
+  body main div.cards div.card4 {
     flex-basis: 21%;
   }
 }/*# sourceMappingURL=style.css.map */
