@@ -406,6 +406,7 @@ template {
 
 body {
   color: pink;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -413,7 +414,7 @@ body {
 body header {
   background-color: yellow;
   order: 2;
-  margin: auto;
+  width: 100%;
   max-width: 1200px;
 }
 body header div#logo img {
@@ -426,7 +427,10 @@ body header a {
 body div#navWrapper {
   order: 1;
   display: flex;
+  background-color: red;
   width: 100%;
+}
+body div#navWrapper #nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -434,37 +438,111 @@ body div#navWrapper {
   width: 100%;
   margin: auto;
 }
-body div.searchBox form.form {
+body div#navWrapper div.searchBox form.form input {
   padding: 0.75rem;
   border: none;
 }
-body div.searchBox button {
+body div#navWrapper div.searchBox form.form button {
   background: transparent;
   border: none;
   outline: none;
   padding-top: 0.5rem;
 }
-body div.searchBox button img {
+body div#navWrapper div.searchBox form.form button img {
   width: 20px;
   height: 20px;
   object-fit: cover;
   background: white;
 }
-
-nav button {
+body div#navWrapper nav button {
   padding: 0.5rem;
   background: transparent;
   border: none;
   font-size: 1.5rem;
   color: white;
 }
-nav button span:nth-child(1) {
+body div#navWrapper nav button span:nth-child(1) {
   display: block;
+}
+body div#navWrapper nav button span:nth-child(2) {
+  display: none;
+}
+body div#navWrapper nav button.open span:nth-child(1) {
+  display: none;
+}
+body div#navWrapper nav button.open span:nth-child(2) {
+  display: block;
+}
+body div#navWrapper nav ul {
+  display: none;
+  border-top: solid 1px 2gba 255, 255, 255, 0.1;
+  padding: 0;
+}
+body div#navWrapper nav ul li {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+body div#navWrapper nav ul li a {
+  display: block;
+  padding: 1rem 2vw;
+  text-decoration: none;
+}
+body div#navWrapper nav ul li.active a {
+  background-color: #ffd4dc;
+  color: black;
+}
+body div#navWrapper nav ul li a:hover {
+  background: pink;
+  color: black;
+}
+body div#navWrapper nav ul.open {
+  display: block;
+}
+
+main {
   order: 3;
+  width: 100%;
   margin: auto;
   max-width: 1200px;
+}
+main div.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+main div.cards div.card1,
+main div.cards div.card2,
+main div.cards div.card3,
+main div.cards div.card4 {
+  flex-basis: 46%;
+  margin: 1rem 2%;
+}
+main div.cards div.card1 img,
+main div.cards div.card2 img,
+main div.cards div.card3 img,
+main div.cards div.card4 img {
+  width: 100%;
+}
+main div.cards div.card1 a,
+main div.cards div.card2 a,
+main div.cards div.card3 a,
+main div.cards div.card4 a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+main div.cards div.card1 a div,
+main div.cards div.card2 a div,
+main div.cards div.card3 a div,
+main div.cards div.card4 a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main footer {
+  width: 100%;
   margin: auto;
   max-width: 1200px;
+  text-align: center;
   background-color: gray;
   color: white;
   font-size: larger;
@@ -473,77 +551,8 @@ nav button span:nth-child(1) {
   justify-content: center;
   align-items: center;
 }
-nav button span:nth-child(1) button span:nth-child(2) {
-  display: none;
-}
-nav button span:nth-child(1) button span:nth-child(2) button.open span:nth-child(1) {
-  display: none;
-}
-nav button span:nth-child(1) button span:nth-child(2) button.open span:nth-child(1) button.open span:nth-child(2) {
-  display: block;
-}
-nav button span:nth-child(1) button span:nth-child(2) button.open span:nth-child(1) button.open span:nth-child(2) ul {
-  display: none;
-  border-top: solid 1px 2gba 255, 255, 255, 0.1;
-  padding: 0;
-}
-nav button span:nth-child(1) button span:nth-child(2) button.open span:nth-child(1) button.open span:nth-child(2) ul li {
-  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-}
-nav button span:nth-child(1) button span:nth-child(2) button.open span:nth-child(1) button.open span:nth-child(2) ul li a {
-  display: block;
-  padding: 1rem 2vw;
-  text-decoration: none;
-}
-nav button span:nth-child(1) button span:nth-child(2) button.open span:nth-child(1) button.open span:nth-child(2) ul li.active a {
-  background-color: #ffd4dc;
-  color: black;
-}
-nav button span:nth-child(1) button span:nth-child(2) button.open span:nth-child(1) button.open span:nth-child(2) ul li a:hover {
-  background: pink;
-  color: black;
-}
-nav button span:nth-child(1) button span:nth-child(2) button.open span:nth-child(1) button.open span:nth-child(2) ul.open {
-  display: block;
-}
-nav button span:nth-child(1) div.cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-nav button span:nth-child(1) div.cards div.card1,
-nav button span:nth-child(1) div.cards div.card2,
-nav button span:nth-child(1) div.cards div.card3,
-nav button span:nth-child(1) div.cards div.card4 {
-  flex-basis: 46%;
-  margin: 1rem 2%;
-}
-nav button span:nth-child(1) div.cards div.card1 img,
-nav button span:nth-child(1) div.cards div.card2 img,
-nav button span:nth-child(1) div.cards div.card3 img,
-nav button span:nth-child(1) div.cards div.card4 img {
-  width: 100%;
-}
-nav button span:nth-child(1) div.cards div.card1 a,
-nav button span:nth-child(1) div.cards div.card2 a,
-nav button span:nth-child(1) div.cards div.card3 a,
-nav button span:nth-child(1) div.cards div.card4 a {
-  display: block;
-  width: 100%;
-  text-decoration: none;
-}
-nav button span:nth-child(1) div.cards div.card1 a div,
-nav button span:nth-child(1) div.cards div.card2 a div,
-nav button span:nth-child(1) div.cards div.card3 a div,
-nav button span:nth-child(1) div.cards div.card4 a div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
 @media only screen and (min-width: 560px) and (min-width: 35rem) {
-  body {
-    margin: auto;
-  }
   body header {
     order: 1;
   }
