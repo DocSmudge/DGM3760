@@ -597,6 +597,29 @@ main div.cruisesDiv div.cruise1 button {
   margin: auto;
   margin-bottom: 2rem;
 }
+main div.agentsDiv {
+  display: flex;
+  flex-direction: column;
+}
+main div.agentsDiv h2 {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+main div.agentsDiv img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  align-self: center;
+  max-width: 300px;
+  margin: 1rem;
+}
+main div.agentsDiv div.informationDiv h4 {
+  margin-left: 1rem;
+}
+main div.agentsDiv div.informationDiv p {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
 main div.footerDiv {
   display: flex;
   flex-direction: column;

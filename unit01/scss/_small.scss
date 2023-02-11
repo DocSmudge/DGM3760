@@ -206,6 +206,32 @@ main {
       }
     }
   } //end cruisesDiv css
+  //start agentsDiv
+  div.agentsDiv {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0.5rem;
+      align-self: center;
+      max-width: 300px;
+      margin: 1rem;
+    }
+    div.informationDiv {
+      h4 {
+        margin-left: 1rem;
+      }
+      p {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  } //end agentsDiv
   div.footerDiv {
     display: flex;
     flex-direction: column;
