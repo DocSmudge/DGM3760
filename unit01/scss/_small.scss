@@ -167,6 +167,45 @@ main {
       }
     }
   } //end articleFiguresDiv
+
+  // start cruises.html cruisesDiv css
+  div.cruisesDiv {
+    h1 {
+      margin-left: 1rem;
+    }
+    div.cruise1 {
+      display: flex;
+      flex-direction: column;
+      figure {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+        img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 0.5rem;
+          align-self: start;
+        }
+        figcaption {
+          h3 {
+            margin-bottom: 0.5rem;
+          }
+          p {
+            margin-bottom: 0.5rem;
+          }
+        } // end figcaption
+      } //end figure css
+      button {
+        border-radius: 20px;
+        padding: 0.5rem;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 2rem;
+      }
+    }
+  } //end cruisesDiv css
   div.footerDiv {
     display: flex;
     flex-direction: column;
