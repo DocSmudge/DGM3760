@@ -43,6 +43,14 @@ body {
       max-width: 1200px;
       width: 100%;
       margin: auto;
+      ul#primaryNav {
+        .parent {
+          background-color: red;
+        }
+        .active {
+          background-color: purple;
+        }
+      }
     }
 
     div.searchBox {
@@ -100,21 +108,21 @@ body {
             text-decoration: none;
           }
         }
-        li.active a {
-          background-color: lighten(#4957ab, 4%);
-          color: white;
-        }
-        li a:hover {
-          background: #4957ab;
-          color: white;
-        }
-      }
-      ul.open {
-        display: block;
+        // li.active a {
+        //   background-color: lighten(pink, 4%); //#4957ab
+        //   color: white;
+        // }
+        // li a:hover {
+        //   background: #4957ab;
+        //   color: white;
       }
     }
+    ul.open {
+      display: block;
+    }
   }
-} // end nav css
+}
+//} // end nav css
 
 main {
   order: 3;

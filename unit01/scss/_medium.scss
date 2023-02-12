@@ -30,15 +30,15 @@
               font-size: 1.1rem;
             }
           }
-          li.active a {
-            background-color: lighten(#4957ab, 4%);
-            color: white;
-          }
-          li a:hover {
-            background: #4957ab;
-            color: white;
-            width: 100%;
-          }
+          // li.active a {
+          //   background-color: lighten(#4957ab, 4%);
+          //   color: white;
+          // }
+          // li a:hover {
+          //   background: #4957ab;
+          //   color: white;
+          //   width: 100%;
+          // }
         }
         #primaryNav li.parent > a:after {
           content: "\25BC";
