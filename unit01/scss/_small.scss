@@ -122,6 +122,9 @@ main {
   width: 100%;
   margin: auto;
   max-width: 1200px;
+  h1 {
+    margin-left: 1rem;
+  }
   div.articleDiv {
     h2 {
       margin-left: 1rem;
@@ -232,6 +235,57 @@ main {
       }
     }
   } //end agentsDiv
+  form fieldset {
+    margin: 2rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem 2%;
+
+    legend {
+      margin: 0 1rem;
+      padding: 0 0.5rem;
+    }
+    label.top {
+      display: block;
+      padding-top: 1rem;
+      font-size: 0.8rem;
+    }
+    label.information {
+      display: block;
+      padding-top: 1rem;
+      font-size: 0.8rem;
+    }
+    label.information select {
+      display: block;
+      // font: 16px;
+      border: solid 1px #999;
+      border-radius: 4px;
+      padding: 0.75rem 0.75rem;
+      background-color: rgba(0, 0, 0, 0.1);
+      max-width: 20rem;
+    }
+    label.top input {
+      -webkit-appearance: none;
+      display: block;
+      border: solid 1px #999;
+      border-radius: 4px;
+      padding: 0.75rem;
+      color: #555;
+      max-width: 20rem;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  } // end form fieldset
+  form input.submitBtn {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+  }
+
   div.footerDiv {
     display: flex;
     flex-direction: column;

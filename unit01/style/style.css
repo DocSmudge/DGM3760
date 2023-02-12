@@ -506,6 +506,9 @@ main {
   margin: auto;
   max-width: 1200px;
 }
+main h1 {
+  margin-left: 1rem;
+}
 main div.articleDiv h2 {
   margin-left: 1rem;
 }
@@ -618,6 +621,54 @@ main div.agentsDiv div.informationDiv h4 {
 main div.agentsDiv div.informationDiv p {
   margin-left: 1rem;
   margin-bottom: 1rem;
+}
+main form fieldset {
+  margin: 2rem 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem 2%;
+}
+main form fieldset legend {
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+main form fieldset label.top {
+  display: block;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+}
+main form fieldset label.information {
+  display: block;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+}
+main form fieldset label.information select {
+  display: block;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem 0.75rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  max-width: 20rem;
+}
+main form fieldset label.top input {
+  -webkit-appearance: none;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+main form input.submitBtn {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
 }
 main div.footerDiv {
   display: flex;
