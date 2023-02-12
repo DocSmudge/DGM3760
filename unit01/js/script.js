@@ -7,20 +7,16 @@ const x = document.getElementById("hamburgerButton");
 
 x.onclick = toggleMenu;
 
-var test = document.querySelectorAll("ul#primaryNav li a");
-console.log(test);
+//-------------------------------------------------------------------------------
 
-var truck = "book.html";
-
+var menuItem = document.querySelectorAll("ul#primaryNav li a");
+var myCurrentPage = location.href;
+var menuLength = menuItem.length;
 var i;
-for (i = 0; i < test.length; i++) {
-  var myPage = test[i].getAttribute("href");
-  console.log(myPage);
-
-  if (truck === myPage) {
-    test[i].parentNode.className = "active";
-    test[i].parentNode.parentNode.parentNode.className = "parent";
-  } else {
-    test[i].parentNode.className = "";
+for (i = 0; i < menuLength; i++) {
+  if (menuItem[i].href === myCurrentPage) {
+    menuItem[i].parentNode.className = "active";
+    menuItem[i].parentNode.parentNode.parentNode.className = "parent";
   }
-} // end of loop
+}
+
