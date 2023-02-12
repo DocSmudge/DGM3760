@@ -102,6 +102,16 @@
           }
         } //end cruise1Div
       } //end cruiseDiv
+      div.agentsDiv {
+        display: block;
+        h2 {
+          margin-bottom: 1rem;
+        }
+        img {
+          float: right;
+          max-width: 300px;
+        }
+      }
       div.footerDiv {
         display: flex;
         flex-direction: row;

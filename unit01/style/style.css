@@ -610,7 +610,6 @@ main div.agentsDiv img {
   height: auto;
   margin-bottom: 0.5rem;
   align-self: center;
-  max-width: 300px;
   margin: 1rem;
 }
 main div.agentsDiv div.informationDiv h4 {
@@ -766,6 +765,16 @@ main footer {
     margin-bottom: 2rem;
     width: 25%;
     align-self: flex-end;
+  }
+  body main div.agentsDiv {
+    display: block;
+  }
+  body main div.agentsDiv h2 {
+    margin-bottom: 1rem;
+  }
+  body main div.agentsDiv img {
+    float: right;
+    max-width: 300px;
   }
   body main div.footerDiv {
     display: flex;
