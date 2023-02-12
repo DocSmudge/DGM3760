@@ -44,12 +44,33 @@ body {
       width: 100%;
       margin: auto;
       ul#primaryNav {
+        a:hover {
+          background-color: lighten(#76bbde, 15%);
+        }
         .parent {
-          background-color: red;
+          background-color: #4957ab;
         }
         .active {
-          background-color: purple;
+          background-color: #4957ab;
+          a {
+            color: white;
+          }
         }
+      }
+      ul#primaryNav li.alwaysParent > a:after {
+        content: "\25BC";
+        font-size: 0.65rem;
+        color: white;
+        float: left;
+      }
+      ul#primaryNav li.parent > a:after {
+        content: "\25BC";
+        font-size: 0.65rem;
+        color: white;
+        float: left;
+      }
+      #primaryNav li:hover ul {
+        display: block;
       }
     }
 
@@ -108,13 +129,6 @@ body {
             text-decoration: none;
           }
         }
-        // li.active a {
-        //   background-color: lighten(pink, 4%); //#4957ab
-        //   color: white;
-        // }
-        // li a:hover {
-        //   background: #4957ab;
-        //   color: white;
       }
     }
     ul.open {
