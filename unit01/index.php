@@ -1,4 +1,4 @@
-<?php include '_header.php';?>
+<?php $ptitle='Cabot Cruises';include '_header.php';?>
       <div class="Slider">
         <picture>
           <source
@@ -89,35 +89,5 @@
         <!--end cards div-->
       </div>
       <!-- end article div -->
-      <div class="footerDiv">
-        <div class="contactDiv">
-          <h2>Contact Us</h2>
-          <h3>CABOT CRUISES</h3>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=1200%20Pennsylvania%20Ave%20SE%2C%20Washington%2C%20District%20of%20Columbia%2C%2020003"
-            >23 South Main St. Suite 16<br />
-            Lexington, VA 24450</a
-          >
-          <h3>Phone:</h3>
-          <a href="tel:1-800-555-1234">1-800-555-1234</a>
-          <h3>Hours of Operation:</h3>
-          <p>Monday – Friday 9am – 4pm</p>
-        </div>
-        <!--end contactDiv-->
-        <div class="newsDiv">
-          <h2>News Letter</h2>
-          <p>
-            Subscribe to our email list and stay up-to-date with our hottest
-            offers and latest specials.
-          </p>
-          <form>
-            <input
-              type="text"
-              placeholder="Email address"
-              name="mail"
-              required
-            />
-            <input type="submit" value="Subscribe" />
-          </form>
-        </div>
+      
         <?php include '_footer.php';?>

@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Cabot Cruises</title>
+    <title><?php echo($ptitle);?></title>
   </head>
   <body>
     <header>
@@ -44,17 +44,17 @@
             <span>&#9776;</span><span>x</span>
           </button>
           <ul id="primaryNav">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li class="alwaysParent">
               <a href="#">Agents</a>
               <ul>
-                <li><a href="agent1.html">Jane Smith</a></li>
-                <li><a href="agent2.html">John Doe</a></li>
+                <li><a href="agent1.php">Jane Smith</a></li>
+                <li><a href="agent2.php">John Doe</a></li>
               </ul>
             </li>
             <!-- end parent nav -->
-            <li><a href="cruises.html">Cruises</a></li>
-            <li><a href="book.html">Book</a></li>
+            <li><a href="cruises.php">Cruises</a></li>
+            <li><a href="book.php">Book</a></li>
           </ul>
         </nav>
 
