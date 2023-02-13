@@ -605,6 +605,7 @@ main div.cruisesDiv div.cruise1 figure img {
   height: auto;
   margin-bottom: 0.5rem;
   align-self: start;
+  max-width: 300px;
 }
 main div.cruisesDiv div.cruise1 figure figcaption h3 {
   margin-bottom: 0.5rem;
